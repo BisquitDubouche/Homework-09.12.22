@@ -101,28 +101,35 @@
 
 
 
-let products = {
-    'Milk': 100,
-    'Sugar': 70,
-    'Butter': 50,
-    'Bread': 20,
-    'Water': 30,
-    'Salt': 10
-}
+// let products = {
+//     'Milk': 100,
+//     'Sugar': 70,
+//     'Butter': 50,
+//     'Bread': 20,
+//     'Water': 30,
+//     'Salt': 10
+// }
 
-let arr = products.split(' ');
-let desire = prompt();
-let res = desire.split(' ');
-console.log(res);
-let milk = desire.includes('Milk');
-let sugar = desire.includes('Sugar');
-let butter = desire.includes('Butter');
-let bread = desire.includes('Bread');
-let water = desire.includes('Water');
-let salt = desire.includes('Salt');
-let counter = 0;
+// let arr = products.split(' ');
+// let productsSum = products[+arr[0]]+products[+arr[1]]+products[+arr[2]] 
 
-let products1;
+
+
+
+
+
+// let desire = prompt();
+// let res = desire.split(' ');
+// console.log(res);
+// let milk = desire.includes('Milk');
+// let sugar = desire.includes('Sugar');
+// let butter = desire.includes('Butter');
+// let bread = desire.includes('Bread');
+// let water = desire.includes('Water');
+// let salt = desire.includes('Salt');
+// let counter = 0;
+
+//let products1;
 
 
 
@@ -164,3 +171,85 @@ let products1;
 //     }
   
 // } 
+
+
+
+// 5. Дан объект: 
+// {
+//     username: 'Tom',
+//     age: 35,
+//     work: 'IT',
+//     pet: {
+//         type: 'Cat',
+//         name: 'Barsik',
+//         color: 'White',
+//         age: 3
+//     }
+// }, запросить у пользователя информацию о том, какой ключ он хочет изменить и значение на которое нужно менять данные под этим ключом, учесть, что есть вложенный объект
+
+let obj = {
+        username: 'Tom',
+        age: 35,                                   // obj.key == obj[‘key’]
+        work: 'IT',
+        pet: {
+        type: 'Cat',
+        name: 'Barsik',
+        color: 'White',
+        age: 3
+        }
+    }
+let auth = prompt();
+switch(auth){
+    case 'username':
+        let username = prompt();
+        obj.username = us;
+        break;
+    case 'age':
+        let age = prompt();
+        obj.age = age;
+        break; 
+    case 'work':
+        let work = prompt();
+        obj.work = work;
+        break;
+    case 'type':
+        let type = prompt();
+        obj.pet.type = type;
+        break;
+    case 'name':
+        let namepet = prompt();
+        obj.pet.type = namepet;
+        break;
+    case 'color':
+        let color = prompt();
+        obj.pet.color = color;
+        break
+    }
+    console.log(obj);
+
+
+
+
+
+
+
+
+
+
+// let res = obj.split(' ');
+// let userName = auth.includes('username');
+// let age = auth.includes('age');
+// let work = auth.includes('work');
+// let pet2 = obj.pet.split(' ');
+// let type = auth.includes('type');
+// let name = auth.includes('name');
+// let color = auth.includes('color');
+// let age1 = auth.includes('age');
+
+
+
+
+
+
+
+
