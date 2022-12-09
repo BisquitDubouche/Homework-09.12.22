@@ -223,7 +223,10 @@ switch(auth){
     case 'color':
         let color = prompt();
         obj.pet.color = color;
-        break
+        break;
+    case `pet age`:
+        let age2 = prompt();
+        obj.pet.age = age2;
     }
     console.log(obj);
 
