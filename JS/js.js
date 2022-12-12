@@ -53,16 +53,16 @@
 // / 3. Запросить у пользователя имя, возраст, профессию, хобби, сохранить данные в объект, распечатать результат, данные необходимо заросить одним промптом
 
 
-let data = prompt('Введите ваше имя, возраст, профессию, хобби'); 
-let obj = data.split(' '); 
-let obj2 = {}; 
+// let data = prompt('Введите ваше имя, возраст, профессию, хобби'); 
+// let obj = data.split(' '); 
+// let obj2 = {}; 
  
-obj2.name = obj[0]; 
-obj2.age = obj[1]; 
-obj2.profession = obj[2]; 
-obj2.hobby = obj[3]; 
+// obj2.name = obj[0]; 
+// obj2.age = obj[1]; 
+// obj2.profession = obj[2]; 
+// obj2.hobby = obj[3]; 
  
-console.log(obj2);
+// console.log(obj2);
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 // 4. Запросить у пользователя информацию для регистрации(логин, пароль, подтверждение пароля), проверить пароли на совпадение, если не совпадают вывести сообщение типа: Пароли не совпадают; также длинна пароля должна быть не менее 6ти символов и не может состоять из пробелов, сохранить данные в объект(подтверждение пароля не нужно сохранять), также по умолчанию добавить объекту ключ isAuth: false; после регистрации предложить пользователю авторизацию на сайте, если согласен, то запросить у него логин и пароль, сверить их с данными из объекта, если все совпадает, то необходимо поменять значение ключа isAuth на true;
 
@@ -168,28 +168,30 @@ console.log(obj2);
 //     }
 
 //     let order = prompt('Введите названия продуктов, которые вы хотите приобрести, через запятую:');
-//     let orderArr = order.split(',');
+//     let orderArr = order.split(', ');
 
 //     let total = 0;
 
-//     if (products.hasOwnProperty(orderArr[0])) {
+//     if (products[orderArr[0]]) {
 //     total += products[orderArr[0]];
 //     }
-//     if (products.hasOwnProperty(orderArr[1])) {
+//     if (products[orderArr[1]]) {
 //     total += products[orderArr[1]];
 //     }
-//     if (products.hasOwnProperty(orderArr[2])) {
+//     if (products[orderArr[2]]) {
 //     total += products[orderArr[2]];
 //     }
-//     if (products.hasOwnProperty(orderArr[3])) {
+//     if (products[orderArr[3]]) {
 //     total += products[orderArr[3]];
 //     }
-//     if (products.hasOwnProperty(orderArr[4])) {
+//     if (products[orderArr[4]]) {
 //     total += products[orderArr[4]];
 //     }
-//     if (products.hasOwnProperty(orderArr[5])) {
+//     if (products[orderArr[5]]) {
 //     total += products[orderArr[5]];
 //     }
+
+// console.log(`Сумма заказа ${total}`);
 
 //     console.log(`Сумма заказа составит ${total}`);
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------
